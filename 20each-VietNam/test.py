@@ -69,6 +69,7 @@ def graphOpening(baseTitles, level, limit, adjList, id2title):
         level -= 1
         baseTitles = nextLevelTitles
         nextLevelTitles = {}
+    return baseTitles
 
 def loadData(level, id2title, adjList, baseTitles):
     with open(str(level) + 'level-id2title.txt', 'r') as f:
@@ -122,13 +123,13 @@ id2title = {}
 adjList = {}
 
 limit = 20
-odlLevel = 1
-level = 2
+odlLevel = 0
+level = 1
 if odlLevel == 0:
     baseTitles = {"Việt Nam": []}
 else:
     baseTitles = {}
     loadData(odlLevel, id2title, adjList, baseTitles)
 
-graphOpening(baseTitles, level - odlLevel, limit, adjList, id2title)
+baseTitles = graphOpening(baseTitles, level - odlLevel, limit, adjList, id2title)
 save(level, id2title, adjList, baseTitles)
