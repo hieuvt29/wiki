@@ -138,9 +138,9 @@ def main(limit, offset, odlLevel, level):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="crawl data from wiki, start at a specific page")
-    parser.add_argument('--limit')
-    parser.add_argument('--offset')
-    parser.add_argument('--oldLevel')
-    parser.add_argument('--level')
+    parser.add_argument('--limit', type=int)
+    parser.add_argument('--offset', type=int)
+    parser.add_argument('--oldLevel', type=int)
+    parser.add_argument('--level', type=int)
     args = vars(parser.parse_args())
     main(args['limit'], args['offset'], args['oldLevel'], args['level'])
