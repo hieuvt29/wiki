@@ -4,6 +4,7 @@ from __future__ import print_function
 import hashlib
 import requests
 import json
+import argparse
 
 def getPageInfo(title, limit, offset):
     url = "https://vi.wikipedia.org/w/api.php?action=query&format=json&prop=links&titles=" + title + "&utf8=1&plnamespace=0|6|14|108|446&pllimit=" + str(limit + offset)
@@ -121,19 +122,25 @@ def graphOpening(baseTitles, level, limit, offset, adjList, id2title):
         nextLevelTitles = {}
     return baseTitles
 
-            
-id2title = {}
-adjList = {}
+def main(limit, offset, odlLevel, level):     
+    id2title = {}
+    adjList = {}
 
-limit = 20
-offset = 20
-odlLevel = 0
-level = 1
-if odlLevel == 0:
-    baseTitles = {"Việt Nam": []}
-else:
-    baseTitles = {}
-    loadData(odlLevel, id2title, adjList, baseTitles)
+    if odlLevel == 0:
+        baseTitles = {"Việt Nam": []}
+    else:
+        baseTitles = {}
+        loadData(odlLevel, id2title, adjList, baseTitles)
 
-baseTitles = graphOpening(baseTitles, level - odlLevel, limit, offset, adjList, id2title)
-save(level, id2title, adjList, baseTitles)
+    baseTitles = graphOpening(baseTitles, level - odlLevel, limit, offset, adjList, id2title)
+    save(level, id2title, adjList, baseTitles)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="crawl data from wiki, start at a specific page")
+    parser.add_argument('--limit')
+    parser.add_argument('--offset')
+    parser.add_argument('--oldLevel')
+    parser.add_argument('--level')
+    args = vars(parser.parse_args())
+    main(args['limit'], args['offset'], args['oldLevel'], args['level'])
