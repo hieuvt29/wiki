@@ -123,8 +123,8 @@ id2title = {}
 adjList = {}
 
 limit = 20
-odlLevel = 0
-level = 1
+odlLevel = 1
+level = 2
 if odlLevel == 0:
     baseTitles = {"Việt Nam": []}
 else:
