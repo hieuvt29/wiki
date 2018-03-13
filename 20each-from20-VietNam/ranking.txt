@@ -1,0 +1,457 @@
+Việt_Nam	455
+Pagerank	Title
+0.0042	5 tháng 5
+0.0041	7 tháng 5
+0.0041	2 tháng 5
+0.0041	26 tháng 5
+0.0041	25 tháng 5
+0.0041	29 tháng 5
+0.004	4 tháng 5
+0.004	3 tháng 5
+0.004	31 tháng 5
+0.004	30 tháng 5
+0.0039	6 tháng 5
+0.0039	27 tháng 5
+0.0039	28 tháng 5
+0.0039	24 tháng 5
+0.0038	8 tháng 5
+0.0037	23 tháng 5
+0.0035	9 tháng 5
+0.0033	22 tháng 5
+0.0032	20 tháng 5
+0.0032	21 tháng 5
+0.0031	22 tháng 11
+0.0031	2017
+0.003	2018
+0.003	24 tháng 11
+0.003	1990
+0.0029	1 tháng 11
+0.0029	19 tháng 11
+0.0029	20 tháng 11
+0.0029	21 tháng 11
+0.0029	29 tháng 11
+0.0029	28 tháng 11
+0.0029	23 tháng 11
+0.0029	2 tháng 11
+0.0028	27 tháng 11
+0.0028	26 tháng 11
+0.0028	25 tháng 11
+0.0028	6 tháng 11
+0.0028	30 tháng 11
+0.0027	7 tháng 11
+0.0027	1973
+0.0027	1960
+0.0027	1978
+0.0026	4 tháng 11
+0.0026	5 tháng 11
+0.0026	3 tháng 11
+0.0026	1963
+0.0026	2012
+0.0026	1975
+0.0026	1985
+0.0026	1984
+0.0025	1962
+0.0025	1 tháng 5
+0.0025	1979
+0.0025	1967
+0.0025	8 tháng 11
+0.0025	9 tháng 11
+0.0025	2004
+0.0025	1981
+0.0025	1992
+0.0025	1976
+0.0024	2009
+0.0024	1996
+0.0024	1995
+0.0024	1983
+0.0024	1974
+0.0024	1965
+0.0024	1982
+0.0024	1959
+0.0024	1968
+0.0023	1987
+0.0023	1954
+0.0023	1988
+0.0023	Lịch Gregory
+0.0023	1957
+0.0023	1971
+0.0023	1941
+0.0023	1958
+0.0023	1915
+0.0023	1925
+0.0023	Phật lịch
+0.0023	Lịch Ấn Độ giáo
+0.0023	Quốc lịch Ấn Độ
+0.0023	Thiên niên kỷ 1
+0.0023	Niên hiệu Anh
+0.0023	Năm
+0.0023	Thiên niên kỷ
+0.0023	1989
+0.0023	1986
+0.0023	1991
+0.0023	2010
+0.0023	19 tháng 5
+0.0023	Chiến tranh thế giới thứ hai
+0.0023	1970
+0.0023	1950
+0.0023	1964
+0.0022	1972
+0.0022	2011
+0.0022	Thế kỷ
+0.0022	Nam Hán
+0.0022	Lịch Đông La Mã
+0.0022	1980
+0.0022	1955
+0.0022	1949
+0.0022	1929
+0.0022	1945
+0.0022	1947
+0.0022	1926
+0.0022	1940
+0.0022	1969
+0.0022	1952
+0.0022	2003
+0.0022	1931
+0.0022	1993
+0.0022	1956
+0.0022	2016
+0.0022	18 tháng 11
+0.0022	2008
+0.0021	1937
+0.0021	1942
+0.0021	1977
+0.0021	2013
+0.0021	1944
+0.0021	Nhâm Thân
+0.0021	Quý Dậu
+0.0021	Thế kỷ 9
+0.0021	Thế kỷ 10
+0.0021	Trung Hoa Dân Quốc
+0.0021	Thế kỷ 11
+0.0021	Thời kỳ con người
+0.0021	2001
+0.0021	Thập niên 910
+0.0021	Thập niên 950
+0.0021	Thập niên 930
+0.0021	Thập niên 920
+0.0021	434
+0.0021	Chiến dịch Điện Biên Phủ
+0.0021	912
+0.0021	Beograd
+0.0021	973
+0.0021	Bắc Ngụy
+0.0021	Bùi Huy Bích
+0.0021	Lê Hiển Tông
+0.0021	Chiến tranh giữa các vì sao
+0.0021	Bram Stoker
+0.0021	Isaac Slade
+0.0021	264
+0.0021	Bruxelles
+0.0021	Kim Ngọc
+0.0021	Hiệp ước ABM
+0.0021	479
+0.0021	Lê Anh Xuân
+0.0021	Camillus de Lellis
+0.0021	Chiến dịch Dynamo
+0.0021	Dracula
+0.0021	Khối Đồng Minh thời Chiến tranh thế giới thứ hai
+0.0021	Erik Weihenmayer
+0.0021	Everest
+0.0021	Bahá'u'lláh
+0.0021	Cải cách ruộng đất tại Việt Nam
+0.0021	Lãnh thổ Ủy thác Quần đảo Thái Bình Dương
+0.0021	Hội đồng Hợp tác vùng Vịnh
+0.0021	Lê Ngọc Hân
+0.0021	Ban Chấp hành Trung ương
+0.0021	899
+0.0021	Air France
+0.0021	Ailee
+0.0021	526
+0.0021	947
+0.0021	Lịch sử Việt Nam
+0.0021	Chiến dịch Praha
+0.0021	Baek Hyun
+0.0021	Aung San Suu Kyi
+0.0021	Amur
+0.0021	Aleksandr Isayevich Solzhenitsyn
+0.0021	398
+0.0021	Bismarck (thiết giáp hạm Đức)
+0.0021	Bắc Kinh
+0.0021	585 TCN
+0.0021	AIDC F-CK-1 Ching-kuo
+0.0021	2002
+0.002	Biển San Hô
+0.002	Azerbaijan
+0.002	9 tháng 2
+0.002	6 tháng 2
+0.002	Avengers: Infinity War
+0.002	4 tháng 3
+0.002	2 tháng 9
+0.002	31 tháng 1
+0.002	4 tháng 2
+0.002	3 tháng 1
+0.002	ACF Fiorentina
+0.002	2 tháng 3
+0.002	Burkina Faso
+0.002	29 tháng 1
+0.002	7 tháng 3
+0.002	Aktobe (tỉnh)
+0.002	Billy Graham
+0.002	Baku
+0.002	Ab urbe condita
+0.002	5 tháng 3
+0.002	Abel Tasman
+0.002	Australopithecus afarensis
+0.002	380
+0.002	642
+0.002	4 tháng 12
+0.002	757
+0.002	1924
+0.002	1923
+0.002	1946
+0.002	1951
+0.002	1953
+0.002	235
+0.002	1997
+0.002	1939
+0.002	1932
+0.002	308
+0.002	783
+0.002	Thiên văn
+0.002	Đại học Massachusetts
+0.002	Sinh sản
+0.002	Thể loại:Bảo trì CS1: Văn bản dư
+0.002	Ấn Độ
+0.002	Tiếng Anh
+0.002	Xuân phân
+0.002	Thu phân
+0.002	Đông chí
+0.002	Thực vật
+0.002	Thiên văn học
+0.002	Thời tiết
+0.002	Độ nghiêng trục
+0.002	Úc
+0.002	Trái Đất
+0.002	Đại học Oxford
+0.002	1918
+0.002	25
+0.002	1919
+0.002	1884
+0.002	1887
+0.002	1935
+0.002	1909
+0.002	1908
+0.002	1894
+0.002	1961
+0.002	1966
+0.002	1885
+0.002	1999
+0.002	2015
+0.002	John McCain
+0.002	Liên Xô
+0.002	Khủng hoảng con tin Iran
+0.002	Cơ quan An ninh Quốc gia
+0.002	BoA
+0.002	Do Thái
+0.002	Abraham Lincoln
+0.002	907
+0.002	ASEAN
+0.002	Big Bang (ban nhạc Hàn Quốc)
+0.002	644
+0.002	Ca sĩ
+0.002	Barack Obama
+0.002	Braunsbedra
+0.002	Bầu cử tổng thống Hoa Kỳ, 2008
+0.002	Chiến tranh Bảy Năm
+0.002	Biên Hòa
+0.002	Adolf Hitler
+0.002	Bão Haiyan (2013)
+0.002	Lịch Bahá'í
+0.002	Lịch Darius
+0.002	Lịch Ireland
+0.002	Lịch Cộng hòa Pháp
+0.002	Lịch Berber
+0.002	Lịch Gregorian
+0.002	Lịch Gregorius
+0.002	Lịch Hồi giáo
+0.002	Lịch Bengal
+0.002	Lịch Celt
+0.002	Lịch Iran
+0.002	Lịch Java
+0.002	Lịch Hindu
+0.002	Lịch Bali
+0.002	Lịch Do Thái
+0.002	Lịch Hellenic
+0.002	Lịch Dân quốc
+0.002	Lịch Ethiopia
+0.002	Lịch Discordia
+0.002	Lưu Thịnh
+0.002	Lưu Sưởng
+0.002	Hậu Đường
+0.002	Kinh Nam
+0.002	Lưu Ẩn
+0.002	Khiết Đan
+0.002	Họ Khúc (lịch sử Việt Nam)
+0.002	Nam Chiếu
+0.002	Nam Hán Thương Đế
+0.002	Miếu hiệu
+0.002	Lưu Khiêm
+0.002	Lưu Mân
+0.002	Nam Hán Cao Tổ
+0.002	Mã Ân
+0.002	Lĩnh Nam Đông đạo
+0.002	Hậu Tấn
+0.002	Mân (Thập quốc)
+0.002	Kỳ
+0.002	Lưu Phần
+0.002	1938
+0.002	2006
+0.002	19 tháng 3
+0.002	2007
+0.002	1 tháng 8
+0.002	2005
+0.002	Danh sách quân chủ Serbia
+0.002	Cộng hòa Síp
+0.002	Giờ mùa hè Trung Âu
+0.002	499
+0.002	496
+0.002	Algérie
+0.002	Dublin
+0.002	Giáng thủy
+0.002	24 tháng 7
+0.002	471
+0.002	467
+0.002	Deutsche Presse-Agentur
+0.002	Danh sách đảng phái chính trị ở Serbia
+0.002	4 tháng 4
+0.002	Estonia
+0.002	Chişinău
+0.002	Danube
+0.002	515
+0.002	500
+0.002	503
+0.002	504
+0.002	26 tháng 1
+0.002	24 tháng 12
+0.002	Thế kỷ 6
+0.002	Thế kỷ 5
+0.002	Thế kỷ 4
+0.002	30 tháng 3
+0.002	Düsseldorf
+0.002	Copenhagen
+0.002	Danh sách thành phố Serbia
+0.002	476
+0.002	477
+0.002	Ten'en
+0.002	Tenroku
+0.002	25 tháng 1
+0.002	Thập niên 900
+0.002	508
+0.002	7 tháng 5 năm 1954
+0.002	Thập niên 990
+0.002	Thập niên 980
+0.002	Thập niên 970
+0.002	Thập niên 960
+0.002	525
+0.002	520
+0.002	493
+0.002	494
+0.002	527
+0.002	3 tháng 12
+0.002	André Trancart
+0.002	Giờ Trung Âu
+0.002	André Lalande
+0.002	30 tháng 4
+0.002	André Botella
+0.002	Thập niên 410
+0.002	Thập niên 430
+0.002	528
+0.002	7554
+0.002	Alphonse Juin
+0.002	Dayton, Ohio
+0.002	Cộng hòa Séc
+0.002	Chicago
+0.002	518
+0.002	512
+0.002	516
+0.002	Thập niên 450
+0.002	Thập niên 440
+0.002	Thập niên 890
+0.002	Croatia
+0.002	6 tháng 12
+0.002	Châu Âu
+0.002	Thập niên 420
+0.002	Danh sách quốc gia
+0.002	2040
+0.002	22 tháng 1
+0.002	20 tháng 7
+0.002	21 tháng 7
+0.002	2014
+0.002	2030
+0.002	1 tháng 1
+0.002	20 tháng 3
+0.002	2020
+0.002	1 tháng 7
+0.002	Lê Tắc
+0.002	Lê Văn Lan
+0.002	Nguyễn Văn Siêu
+0.002	Kỷ Tỵ
+0.002	Giáp Tuất
+0.002	Lưu Cung
+0.002	Hải Phòng
+0.002	Nghệ An
+0.002	Kiều Công Tiễn
+0.002	Canh Tuất
+0.002	Giáp Thìn
+0.002	Khúc Hạo
+0.002	Kỷ Dậu
+0.002	Hậu Lương Thái Tổ
+0.002	Hà Đông
+0.002	Kỷ Mão
+0.002	Mậu Dần
+0.002	Chiến tranh Tây Ban Nha–Mỹ
+0.002	Kỷ Mùi
+0.002	Giáp Dần
+0.002	Hậu Ngô Vương
+0.002	Khúc Thừa Dụ
+0.002	Liễu Thăng
+0.002	Kỷ Hợi
+0.002	Lý Khắc Chính
+0.002	Giáp Thân
+0.002	Giáp Tý
+0.002	Ngô
+0.002	Lý Lượng
+0.002	Khuông Việt
+0.002	Chữ Hán
+0.002	Kỷ Sửu
+0.002	Canh Tý
+0.002	Giáp Ngọ
+0.002	Lý Đằng
+0.002	Chó
+0.002	Khúc Thừa Mỹ
+0.002	Ngô Sĩ Liên
+0.002	Lịch Triều Tiên
+0.002	Thập niên 940
+0.002	Lịch Nhật Bản
+0.002	Ngô Quyền
+0.002	Tengyō
+0.002	Mậu Tuất
+0.002	APEC Nhật Bản 1995
+0.002	APEC Hoa Kỳ 2011
+0.002	APEC Mexico 2002
+0.002	APEC Canada 1997
+0.002	APEC Indonesia 1994
+0.002	938
+0.002	APEC Hoa Kỳ 1993
+0.002	APEC Nhật Bản 2010
+0.002	APEC Chile 2004
+0.002	APEC Hàn Quốc 2005
+0.002	APEC New Zealand 1999
+0.002	APEC Nga 2012
+0.002	APEC Hàn Quốc 1991
+0.002	APEC Australia 1989
+0.002	APEC Indonesia 2013
+0.002	APEC Malaysia 1998
+0.002	APEC Brunei 2000
+0.002	APEC Australia 2007
+0.0019	Việt Nam
