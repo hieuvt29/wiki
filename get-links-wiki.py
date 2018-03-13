@@ -9,6 +9,7 @@ import os
 
 def getPageInfo(title, limit, offset):
     url = "https://vi.wikipedia.org/w/api.php?action=query&format=json&prop=links&titles=" + title + "&utf8=1&plnamespace=0|6|14|108|446&pllimit=" + str(limit + offset)
+    # print(url)
     res = requests.get(url)
     resj = json.loads(res.text)
     pages = resj['query']['pages']
@@ -22,60 +23,32 @@ def getPageInfo(title, limit, offset):
         pageID = m.hexdigest()
     elif "links" in pages[pageID]:
         links = pages[pageID]['links'][offset:]
+        print(links)
     return (pageID, pageTitle, links)
 
-def loadData(source_folder, level, id2title, adjList, baseTitles):
-    with open(os.path.join(source_folder, str(level) + 'level-id2title.txt'), 'r') as f:
-        for line in f.readlines():
-            pageID, pageTitle = line.rstrip().split("\t")
-            id2title[pageID] = pageTitle
-
-    with open(os.path.join(source_folder, str(level) + 'level-adjList2.txt'), 'r') as f:
-        for line in f.readlines():
-            pageIDs = line.rstrip().split(" ")
-            if len(pageIDs) == 1:
-                adjList[pageIDs[0]] = []
-            else: 
-                adjList[pageIDs[0]] = pageIDs[1:]
-            # print(pageIDs)
-
-    with open(os.path.join(source_folder, str(level) + 'level-nextBaseTitles.txt'), 'r') as f:
-        for line in f.readlines():
-            arr = line.rstrip().split("\t")
-            title = arr[0]
-            baseTitles[title] = arr[1:]
-            # print(arr[1:])
-
-def save(source_folder, level, id2title, adjList, baseTitles):   
+def save(source_folder, num_pages, id2title, adjList):   
     if not os.path.exists(source_folder):
         os.mkdir(source_folder)
         
-    with open(os.path.join(source_folder, str(level) + 'level-id2title.txt'), 'w') as f:
+    with open(os.path.join(source_folder, str(num_pages) + 'vertex-id2title.txt'), 'w') as f:
         for _id in id2title:
             f.write(_id + "\t" + id2title[_id])
             f.write("\n")
 
-    with open(os.path.join(source_folder, str(level) + 'level-adjList.txt'), 'w') as f:
+    with open(os.path.join(source_folder, str(num_pages) + 'vertex-adjList.txt'), 'w') as f:
         for _id in adjList:
             if len(adjList[_id]):
                 for nextId in adjList[_id]:
                     f.write(_id + " " + nextId + "\n")
 
-    with open(os.path.join(source_folder, str(level) + 'level-adjList2.txt'), 'w') as f:
+    with open(os.path.join(source_folder, str(num_pages) + 'vertex-adjList2.txt'), 'w') as f:
         for _id in adjList:
             f.write(_id)
             for nextId in adjList[_id]:
                 f.write(" " + nextId)
             f.write("\n")
 
-    with open(os.path.join(source_folder, str(level) + 'level-nextBaseTitles.txt'), 'w') as f:
-        for title in baseTitles:
-            f.write(title)
-            for parentId in baseTitles[title]:
-                f.write("\t" + parentId)
-            f.write("\n")
-
-def graphOpening(baseTitles, level, limit, offset, adjList, id2title):
+def graphOpening(maxNumPage = 0, baseTitles = None, limit = 0, offset = 0, adjList = None, id2title = None, source_folder = None):
     """
     Start with a baseTitles
     1) for each title in baseTitles:
@@ -89,10 +62,10 @@ def graphOpening(baseTitles, level, limit, offset, adjList, id2title):
         1.4) if links: add links to nextLevelTitles:
             1.4.1) if title exist in nextLevelTitles: add pageID to title's parent
             1.4.2) if not: add to nextLevelTitles
-        
     """
     nextLevelTitles = {} # each element: {"title": <title>, "parent": [<parentID>]}
-    while level >= 0:
+    stop = False
+    while True:
         for title in baseTitles:
             isInspected = False
             print(title + "-", end="")
@@ -107,37 +80,50 @@ def graphOpening(baseTitles, level, limit, offset, adjList, id2title):
             # init adjacency list for pageID
             if pageID not in adjList:
                 adjList[pageID] = []
-            # add to adjecency list of it's parents
+            # add to adjacency list of it's parents
             preds = baseTitles[title]
             for pred in preds:
                 if pageID not in adjList[pred]:
                     adjList[pred].append(pageID)
+            # backup
+            if not isInspected and (len(id2title) % 1000 == 0):
+                save(source_folder, len(id2title), id2title, adjList)
             # find next level pages
-            if links and (not isInspected):
+            if links and (not isInspected) and (not stop):
                 for item in links:
                     title = item['title']
                     if title in nextLevelTitles:
                         nextLevelTitles[title].append(pageID) # don't need to check
                     else:
                         nextLevelTitles[title] = [pageID]
+        if stop or len(nextLevelTitles) == 0:
+            print("STOP")
+            break
+        if len(id2title) + len(nextLevelTitles) > maxNumPage:
+            print("pre STOP")
+            stop = True
+            baseTitles = {}
+            num_more = maxNumPage - len(id2title)
+            for item in nextLevelTitles.items():
+                if num_more: 
+                    num_more -= 1
+                    baseTitles.update({item[0]: item[1]})
+                else: break
+        else:
+            baseTitles = nextLevelTitles
 
-        level -= 1
-        baseTitles = nextLevelTitles
         nextLevelTitles = {}
-    return baseTitles
+            
+    save(source_folder, len(id2title), id2title, adjList)
 
-def main(startPage, limit, offset, odlLevel, level):
+def main(startPage, maxNumPage, limit, offset):
     source_folder = "{}each-from{}-{}".format(limit, offset, startPage)
     id2title = {}
     adjList = {}
     baseTitles = {}
-    if odlLevel == 0:
-        baseTitles[startPage] = []
-    else:
-        loadData(source_folder, odlLevel, id2title, adjList, baseTitles)
+    baseTitles[startPage] = []
 
-    baseTitles = graphOpening(baseTitles, level - odlLevel, limit, offset, adjList, id2title)
-    save(source_folder, level, id2title, adjList, baseTitles)
+    graphOpening(maxNumPage= maxNumPage, baseTitles = baseTitles, limit = limit, offset = offset, adjList = adjList, id2title = id2title, source_folder= source_folder)
 
 
 if __name__ == "__main__":
@@ -145,7 +131,6 @@ if __name__ == "__main__":
     parser.add_argument('--startPage', type=str, help="title of particular page to start opening graph")
     parser.add_argument('--limit', type=int, help = "limit number of retrieval links for each page")
     parser.add_argument('--offset', type=int, help ="not open graph to <offset> first links for each page")
-    parser.add_argument('--oldLevel', type=int, help = "where is the last level we stop")
-    parser.add_argument('--level', type=int, help = "open to this level")
+    parser.add_argument('--maxNumPage', type=int, help ="maximum number of pages want to get")
     args = vars(parser.parse_args())
-    main(args['startPage'], args['limit'], args['offset'], args['oldLevel'], args['level'])
+    main(args['startPage'], args['maxNumPage'], args['limit'], args['offset'])
