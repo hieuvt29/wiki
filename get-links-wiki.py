@@ -23,7 +23,6 @@ def getPageInfo(title, limit, offset):
         pageID = m.hexdigest()
     elif "links" in pages[pageID]:
         links = pages[pageID]['links'][offset:]
-        print(links)
     return (pageID, pageTitle, links)
 
 def save(source_folder, num_pages, id2title, adjList):   
@@ -86,7 +85,7 @@ def graphOpening(maxNumPage = 0, baseTitles = None, limit = 0, offset = 0, adjLi
                 if pageID not in adjList[pred]:
                     adjList[pred].append(pageID)
             # backup
-            if not isInspected and (len(id2title) % 1000 == 0):
+            if not isInspected and (len(id2title) % 5000 == 0):
                 save(source_folder, len(id2title), id2title, adjList)
             # find next level pages
             if links and (not isInspected) and (not stop):
